@@ -23,3 +23,5 @@ Get-Service Sysmon* -ErrorAction SilentlyContinue
 Get-WinEvent -ListLog 'Microsoft-Windows-Sysmon/Operational'
 auditpol /get /category:*
 Đối với Splunk, tiếp tục xác minh dữ liệu từ các nguồn WinEventLog:Security, Microsoft-Windows-Sysmon/Operational, Microsoft-Windows-PowerShell/Operational theo cấu hình triển khai thực tế.
+
+Các file input/output.conf sử dụng để cấu hình trên endpoint nhằm đẩy log tập trung về SIEM
